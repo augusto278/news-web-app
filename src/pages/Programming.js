@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Programming.css";
+import ArticleCard from "../components/ArticleCard";
 
 const Programming = ({ saveArticle, savedArticles }) => {
   const [articles, setArticles] = useState([]);
@@ -18,21 +19,12 @@ const Programming = ({ saveArticle, savedArticles }) => {
       <div className="container">
         <div className="row g-4">
           {articles.map((article) => (
-            <div className="col-md-4" key={article._id}>
-              <div className="card card-custom h-100 bg-dark">
-                <div className="card-body">
-                  <h5 className="card-title card-title-custom">
-                    <a className="text-warning" href={article.web_url} target="_blank" rel="noopener noreferrer">
-                      {article.headline.main}
-                    </a>
-                  </h5>
-                  <p className="card-text text-secondary">{article.abstract}</p>
-                  <button onClick={() => saveArticle(article)} className={`btn ${savedArticles.some((a) => a._id === article._id) ? "btn-danger" : "btn-warning"}`}>
-                    {savedArticles.some((a) => a._id === article._id) ? "Unsave" : "Save"}
-                  </button>
-                </div>
-              </div>
-            </div>
+            <ArticleCard
+            key={article._id}
+            article={article}
+            saveArticle={saveArticle}
+            isSaved={savedArticles.some((a) => a._id === article._id)}
+          />
           ))}
         </div>
       </div>

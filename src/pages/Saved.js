@@ -15,7 +15,7 @@ function Saved({ savedArticles, saveArticle }) {
                 <div className="card card-custom h-100 bg-dark">
                   <div className="card-body">
                     <h5 className="card-title card-title-custom">
-                      <a href={article.web_url} target="_blank" rel="noopener noreferrer">
+                      <a className="text-warning"href={article.web_url} target="_blank" rel="noopener noreferrer">
                         {article.headline.main}
                       </a>
                     </h5>
