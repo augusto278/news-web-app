@@ -1,0 +1,7 @@
+.nav-item {
+  margin-right: 1rem;
+}
+
+.nav-link:hover {
+  color: #ffc107;
+}

@@ -1,0 +1,22 @@
+.indonesia-page {
+  background-image: url('C:\1. Kuliah Rayhan\Hacktiv8-MSIB\capstone\news-web-app\src\components\wp5317934-world-map-wallpaper-black.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.card-custom {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.card-custom:hover {
+  transform: scale(1.03); /* Animasi zoom saat hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+

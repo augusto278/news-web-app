@@ -1,0 +1,9 @@
+.covid19-page {
+  background-image: url("C:\1. Kuliah Rayhan\Hacktiv8-MSIB\capstone\news-web-app\src\components\wp9135815-johnson-johnsons-janssen-covid-19-vaccine-wallpapers.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  padding: 20px;
+}
